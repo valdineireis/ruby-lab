@@ -7,5 +7,5 @@
 - Jogo da Forca <br>
   `cd forca && ruby main.rb`
 
-- Jogo Foge-Foge (em desenvolvimento) <br>
+- Jogo Foge-Foge <br>
   `cd fogefoge && ruby main.rb`
