@@ -1,7 +1,10 @@
 class Estoque
 
+    attr_reader :livros
+
     def initialize
         @livros = []
+        @livros.extend Contador
     end
 
     def exporta_csv
@@ -20,8 +23,17 @@ class Estoque
         @livros.size
     end
 
-    def adiciona(livro)
+    def << (livro)
         @livros << livro if livro
+        self
+    end
+
+    def remove(livro)
+        @livros.delete livro
+    end
+
+    def maximo_necessario
+        @livros.maximo_necessario
     end
 
 end
